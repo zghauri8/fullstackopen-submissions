@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: phonebook-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    rootDirectory: part3/phonebook-backend
+    plan: free
