@@ -35,10 +35,11 @@ const App = () => {
           })
           .catch(error => {
             setNotification({
-              message: `Information of ${existing.name} has already been removed from server`,
+              message: error.message || `Failed to update ${existing.name}`,
               type: 'error',
             });
             setTimeout(() => setNotification({ message: null, type: null }), 5000);
+            // Optionally remove from state if already deleted on server
             setPersons(persons.filter(p => p.id !== existing.id));
           });
       }
@@ -56,8 +57,10 @@ const App = () => {
         setNewNumber('');
       })
       .catch(error => {
-        // handle backend errors if any
-        setNotification({ message: 'Failed to add person', type: 'error' });
+        setNotification({
+          message: error.message || 'Failed to add person',
+          type: 'error',
+        });
         setTimeout(() => setNotification({ message: null, type: null }), 5000);
       });
   };
