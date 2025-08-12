@@ -17,6 +17,11 @@ mongoose
   .then(() => logger.info('Connected to MongoDB'))
   .catch((err) => logger.error('MongoDB connection error:', err.message))
 
+ if (process.env.NODE_ENV === 'test') {
+  const testingRouter = require('./controllers/testing')
+  app.use('/api/testing', testingRouter)
+} 
+
 const app = express()
 app.use(cors())
 app.use(express.json())
