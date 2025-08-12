@@ -1,10 +1,6 @@
-// utils/logger.js
-const info = (...params) => {
-  if (process.env.NODE_ENV !== 'test') {
-    console.log(...params)
-  }
+
+const info = (...args) => {
+  if (process.env.NODE_ENV !== 'test') console.log(...args)
 }
-const error = (...params) => {
-  console.error(...params)
-}
+const error = (...args) => console.error(...args)
 module.exports = { info, error }
