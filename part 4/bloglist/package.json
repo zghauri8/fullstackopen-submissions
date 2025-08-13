@@ -7,7 +7,8 @@
     "dev": "node --watch index.js",
     "start": "node index.js",
     "test": "cross-env NODE_ENV=test node --test --test-concurrency=1",
-    "test:watch": "cross-env NODE_ENV=test node --watch --test --test-concurrency=1"
+    "test:watch": "cross-env NODE_ENV=test node --watch --test --test-concurrency=1",
+    "start:testapi": "cross-env NODE_ENV=test node index.js"
   },
   "keywords": [],
   "author": "",
