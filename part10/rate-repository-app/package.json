@@ -1,0 +1,37 @@
+{
+  "name": "rate-repository-app",
+  "version": "1.0.0",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "lint": "eslint . --ext .js,.jsx"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.13.9",
+    "@react-native-async-storage/async-storage": "^1.24.0",
+    "@react-native-picker/picker": "^2.11.1",
+    "@react-navigation/native": "^7.0.0",
+    "axios": "^1.11.0",
+    "date-fns": "^3.6.0",
+    "expo": "^53.0.0",
+    "expo-constants": "^16.0.0",
+    "expo-linking": "^6.3.1",
+    "formik": "^2.4.6",
+    "graphql": "^16.11.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.74.2",
+    "react-native-web": "~0.19.12",
+    "react-router-native": "^6.30.0",
+    "use-debounce": "^9.0.4",
+    "yup": "^1.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.33.0",
+    "eslint-plugin-react": "^7.37.5"
+  }
+}
