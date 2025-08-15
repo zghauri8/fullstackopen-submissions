@@ -1,0 +1,1 @@
+echo "Pokedex CI/CD repo: https://github.com/zghauri8/full-stack-open-pokedex`r`nOwn pipeline (11.20–11.21): https://github.com/zghauri8/fullstackopen-submissions" > part11/README.md
